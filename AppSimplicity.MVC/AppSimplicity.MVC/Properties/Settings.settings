@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AppSimplicity.MVC.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DateHandlerProvider" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AppSimplicity.MVC.Localization.DefaultDateHandler, AppSimplicity.MVC</Value>
+    </Setting>
+    <Setting Name="ViewLocations" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;~/Views/{1}/{0}.cshtml&lt;/string&gt;
+  &lt;string&gt;~/Views/{1}/Default/{0}.cshtml&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="PartialViewLocations" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;~/Views/{1}/{0}_.cshtml&lt;/string&gt;
+  &lt;string&gt;~/Views/{1}/Default/{0}_.cshtml&lt;/string&gt;
+  &lt;string&gt;~/Views/Shared/{0}_.cshtml&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SitemapLocation" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">~/assets/navigation/sitemap.{0}.xml</Value>
+    </Setting>
+    <Setting Name="NavigationProvider" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AppSimplicity.MVC.Navigation.DefaultMenuLoader, AppSimplicity.MVC</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
