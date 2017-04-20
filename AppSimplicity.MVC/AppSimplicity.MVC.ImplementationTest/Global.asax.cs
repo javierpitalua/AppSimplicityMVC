@@ -13,6 +13,7 @@ namespace AppSimplicity.MVC.ImplementationTest
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            AppSimplicity.MVC.Application.Initialize();
         }
     }
 }
