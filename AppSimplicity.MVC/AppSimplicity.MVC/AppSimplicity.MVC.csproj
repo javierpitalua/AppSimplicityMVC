@@ -98,9 +98,12 @@
     <Compile Include="WebControls\TextBoxControl.cs" />
     <Compile Include="WebControls\WebControlsDictionary.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="readme.txt" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="AppSimplicity.MVC.nuspec" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

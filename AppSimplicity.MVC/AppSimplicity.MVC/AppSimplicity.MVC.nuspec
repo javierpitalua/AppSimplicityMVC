@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AppSimplicity.MVC</id>
+    <version>1.0</version>
+    <title>AppSimplicityMVC</title>
+    <authors>Javier Pitalua Cobos</authors>
+    <owners>javierpitalua</owners>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <projectUrl>https://github.com/javierpitalua/AppSimplicityMVC</projectUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Holds helpers and </description>
+    <releaseNotes>WebControls and Navigation helpers.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>C# MVC</tags>
+  </metadata>
+  <files>    
+      <!-- Add a readme -->
+      <file src="readme.txt" target="" />
+      <!-- Add files from an arbitrary folder that's not necessarily in the project -->
+      <file src="bin\Release\AppSimplicity.MVC.dll" target="lib\net40\" />
+      <file src="bin\Release\es\AppSimplicity.MVC.resources.dll" target="lib\net40\es\" />
+  </files>
+</package>

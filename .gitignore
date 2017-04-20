@@ -3,3 +3,7 @@
 ################################################################################
 
 /AppSimplicity.MVC/AppSimplicity.MVC/bin
+/AppSimplicity.MVC/packages
+/AppSimplicity.MVC/AppSimplicity.MVC.ImplementationTest/obj
+/AppSimplicity.MVC/AppSimplicity.MVC.ImplementationTest/bin
+/AppSimplicity.MVC/AppSimplicity.MVC/obj
