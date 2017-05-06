@@ -26,5 +26,8 @@
     <Setting Name="NavigationProvider" Type="System.String" Scope="Application">
       <Value Profile="(Default)">AppSimplicity.MVC.Navigation.DefaultMenuLoader, AppSimplicity.MVC</Value>
     </Setting>
+    <Setting Name="UseCultureForDateFormatting" Type="System.Boolean" Scope="Application">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSimplicity.MVC", "AppSim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSimplicity.MVC.ImplementationTest", "AppSimplicity.MVC.ImplementationTest\AppSimplicity.MVC.ImplementationTest.csproj", "{5C90E774-0F8A-491B-90DF-C0A41319F10B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppSimplicity.MVC.Tests", "AppSimplicity.MVC.Tests\AppSimplicity.MVC.Tests.csproj", "{AE52B7FC-B5FE-4729-8AAB-89B1F33AC372}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{5C90E774-0F8A-491B-90DF-C0A41319F10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C90E774-0F8A-491B-90DF-C0A41319F10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C90E774-0F8A-491B-90DF-C0A41319F10B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE52B7FC-B5FE-4729-8AAB-89B1F33AC372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE52B7FC-B5FE-4729-8AAB-89B1F33AC372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE52B7FC-B5FE-4729-8AAB-89B1F33AC372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE52B7FC-B5FE-4729-8AAB-89B1F33AC372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,5 +38,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F3E61DCC-5A7F-45D9-BA79-F10D92B58B62} = {B32EC72B-6694-4BBE-863B-670B8FDA3923}
 		{5C90E774-0F8A-491B-90DF-C0A41319F10B} = {33A9ADA1-2711-4335-95C0-3C2DFFE67B85}
+		{AE52B7FC-B5FE-4729-8AAB-89B1F33AC372} = {33A9ADA1-2711-4335-95C0-3C2DFFE67B85}
 	EndGlobalSection
 EndGlobal

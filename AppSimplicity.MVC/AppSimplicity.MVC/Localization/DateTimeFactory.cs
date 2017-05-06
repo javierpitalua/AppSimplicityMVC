@@ -38,7 +38,13 @@ namespace AppSimplicity.MVC.Localization
                 return "";
             }
 
-            return string.Format(Provider.GetDateTimeFormat(), value);
+            DateTime localeTime = value;
+            if (Properties.Settings.Default.UseCultureForDateFormatting)
+            {
+                localeTime = TimeZone.CurrentTimeZone.ToLocalTime(value);
+            }
+
+            return string.Format(Provider.GetDateTimeFormat(), localeTime);
         }
 
         /// <summary>
@@ -66,7 +72,6 @@ namespace AppSimplicity.MVC.Localization
                     return FormatDateTime(value.Value);
                 }
             }
-
             return "";
         }
     }

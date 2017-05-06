@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    var now = DateTime.UtcNow;
+ }
+
+<h3>DateTime Format</h3>
+<span>Current UTC is: @now.ToString()</span><br/>
+<span>Local culture format is: @AppSimplicity.MVC.Utils.FormatDate(now)</span><br />

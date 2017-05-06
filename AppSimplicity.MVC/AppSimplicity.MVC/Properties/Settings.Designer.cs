@@ -76,5 +76,14 @@ namespace AppSimplicity.MVC.Properties {
                 return ((string)(this["NavigationProvider"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool UseCultureForDateFormatting {
+            get {
+                return ((bool)(this["UseCultureForDateFormatting"]));
+            }
+        }
     }
 }
