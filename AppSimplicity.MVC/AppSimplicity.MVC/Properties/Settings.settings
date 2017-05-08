@@ -29,5 +29,8 @@
     <Setting Name="UseCultureForDateFormatting" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="GlobalCurrencyFormat" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">${0:#,###,##0.00}</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

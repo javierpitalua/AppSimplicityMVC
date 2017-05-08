@@ -85,5 +85,14 @@ namespace AppSimplicity.MVC.Properties {
                 return ((bool)(this["UseCultureForDateFormatting"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("${0:#,###,##0.00}")]
+        public string GlobalCurrencyFormat {
+            get {
+                return ((string)(this["GlobalCurrencyFormat"]));
+            }
+        }
     }
 }

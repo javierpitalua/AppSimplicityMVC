@@ -70,6 +70,8 @@
       <DependentUpon>Messages.resx</DependentUpon>
     </Compile>
     <Compile Include="ModelBinders\DateTimeModelBinder.cs" />
+    <Compile Include="ModelBinders\JsonCurrencyConverter.cs" />
+    <Compile Include="ModelBinders\JsonLocaleDateTimeConverter.cs" />
     <Compile Include="Models\IndexBaseModel.cs" />
     <Compile Include="Models\ResponseEditModel.cs" />
     <Compile Include="Models\SubDetailPanel.cs" />

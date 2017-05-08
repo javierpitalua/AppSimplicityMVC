@@ -9,6 +9,7 @@ namespace AppSimplicity.MVC.Localization
 {
     public class DateTimeFactory
     {
+        #region Provider
         private static IDateHandlerProvider _CurrentInstance;
         /// <summary>
         /// Instantiates the dateformat localization provider
@@ -25,13 +26,14 @@ namespace AppSimplicity.MVC.Localization
                 return _CurrentInstance;
             }
         }
+        #endregion
 
         /// <summary>
         /// Formats a date value using the current provider
         /// </summary>
         /// <param name="value">The date value to be formatted</param>
         /// <returns></returns>
-        public static string FormatDateTime(DateTime value)
+        public static string FormatDateTime(DateTime value, bool isUTC = true)
         {
             if (value == DateTime.MinValue)
             {
@@ -39,9 +41,13 @@ namespace AppSimplicity.MVC.Localization
             }
 
             DateTime localeTime = value;
-            if (Properties.Settings.Default.UseCultureForDateFormatting)
+
+            if (isUTC)
             {
-                localeTime = TimeZone.CurrentTimeZone.ToLocalTime(value);
+                if (Properties.Settings.Default.UseCultureForDateFormatting)
+                {
+                    localeTime = TimeZone.CurrentTimeZone.ToLocalTime(value);
+                }
             }
 
             return string.Format(Provider.GetDateTimeFormat(), localeTime);
@@ -52,25 +58,49 @@ namespace AppSimplicity.MVC.Localization
         /// </summary>
         /// <param name="value">The date value to be formatted</param>
         /// <returns></returns>
-        public static string FormatDateTime(DateTime? value, bool removeTimeIfNotPresent = true)
+        public static string FormatDateTime(DateTime? value, bool isUTC = true)
         {
             if (value.HasValue)
             {
-                if (removeTimeIfNotPresent)
+                return FormatDateTime(value.Value, isUTC);
+            }
+            return "";
+        }
+
+        /// <summary>
+        /// Formats a date value using the current provider
+        /// </summary>
+        /// <param name="value">The date value to be formatted</param>
+        /// <returns></returns>
+        public static string FormatDate(DateTime value, bool isUTC = true)
+        {
+            if (value == DateTime.MinValue)
+            {
+                return "";
+            }
+
+            DateTime localeTime = value;
+            if (isUTC)
+            {
+                if (Properties.Settings.Default.UseCultureForDateFormatting)
                 {
-                    if (value.Value.ContainsTimeInformation())
-                    {
-                        return FormatDateTime(value.Value);
-                    }
-                    else
-                    {
-                        return string.Format(Provider.GetDateFormat(), value.Value);
-                    }
+                    localeTime = TimeZone.CurrentTimeZone.ToLocalTime(value);
                 }
-                else
-                {
-                    return FormatDateTime(value.Value);
-                }
+            }
+
+            return string.Format(Provider.GetDateFormat(), localeTime);
+        }
+
+        /// <summary>
+        /// Formats a nullable date value using the current localization provider
+        /// </summary>
+        /// <param name="value">The date value to be formatted</param>
+        /// <returns></returns>
+        public static string FormatDate(DateTime? value, bool isUTC = true)
+        {
+            if (value.HasValue)
+            {
+                return FormatDate(value.Value);
             }
             return "";
         }
