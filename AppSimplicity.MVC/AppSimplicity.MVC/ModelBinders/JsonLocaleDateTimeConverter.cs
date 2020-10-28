@@ -107,4 +107,28 @@ namespace AppSimplicity.MVC.ModelBinders
             }
         }
     }
+
+    public class JsonDateConverter : JsonConverter
+    {
+        public override bool CanConvert(Type objectType)
+        {
+            return Utils.IsADateTimeType(objectType);
+        }
+
+        public override object ReadJson(
+            JsonReader reader,
+            Type objectType,
+            object existingValue,
+            JsonSerializer serializer)
+        {
+            return existingValue;
+        }
+
+        public override void WriteJson(JsonWriter writer, object value, JsonSerializer serializer)
+        {
+            if (!this.CanConvert(value.GetType()))
+                return;
+            writer.WriteValue(Utils.FormatDate((DateTime)value, false));
+        }
+    }
 }
