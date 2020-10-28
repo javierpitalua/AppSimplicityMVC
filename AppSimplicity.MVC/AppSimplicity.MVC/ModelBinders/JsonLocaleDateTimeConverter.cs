@@ -28,7 +28,7 @@ namespace AppSimplicity.MVC.ModelBinders
         {
             if (value.GetType() == typeof(DateTime))
             {
-                writer.WriteValue(Utils.FormatDate((DateTime)value));
+                writer.WriteValue(Utils.FormatDate((DateTime)value, true));
             }
         }
     }
@@ -65,7 +65,7 @@ namespace AppSimplicity.MVC.ModelBinders
         {
             if (value.GetType() == typeof(DateTime))
             {
-                writer.WriteValue(Utils.FormatDateTime((DateTime)value));
+                writer.WriteValue(Utils.FormatDateTime((DateTime)value, true));
             }
         }
     }

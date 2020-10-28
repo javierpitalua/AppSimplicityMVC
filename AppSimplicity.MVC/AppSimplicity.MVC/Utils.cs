@@ -47,7 +47,7 @@ namespace AppSimplicity.MVC
         /// <returns></returns>
         public static string FormatDateTime(DateTime? date, bool isUTC = true)
         {
-            return Localization.DateTimeFactory.FormatDateTime(date);
+            return Localization.DateTimeFactory.FormatDateTime(date, isUTC);
         }
 
         /// <summary>
@@ -57,7 +57,7 @@ namespace AppSimplicity.MVC
         /// <returns></returns>
         public static string FormatDateTime(DateTime date, bool isUTC = true)
         {
-            return Localization.DateTimeFactory.FormatDateTime(date);
+            return Localization.DateTimeFactory.FormatDateTime(date, isUTC);
         }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace AppSimplicity.MVC
         /// <returns></returns>
         public static string FormatDate(DateTime date, bool isUTC = true)
         {
-            return Localization.DateTimeFactory.FormatDate(date);
+            return Localization.DateTimeFactory.FormatDate(date, isUTC);
         }
 
         /// <summary>
@@ -77,7 +77,7 @@ namespace AppSimplicity.MVC
         /// <returns></returns>
         public static string FormatDate(DateTime? date, bool isUTC = true)
         {
-            return Localization.DateTimeFactory.FormatDate(date);
+            return Localization.DateTimeFactory.FormatDate(date, isUTC);
         }
 
         /// <summary>

@@ -11,3 +11,7 @@
 /AppSimplicity.MVC/AppSimplicity.MVC.Tests/obj
 /AppSimplicity.MVC/AppSimplicity.MVC/AppSimplicity.MVC.1.2.nupkg
 /AppSimplicity.MVC/AppSimplicity.MVC/AppSimplicity.MVC.1.1.2.nupkg
+/AppSimplicity.MVC/AppSimplicity.MVC.Tests/bin/Debug
+/AppSimplicity.MVC/AppSimplicity.MVC.ImplementationTest/AppSimplicity.MVC.ImplementationTest.csproj.user
+/AppSimplicity.MVC/.vs/AppSimplicity.MVC/v16/.suo
+*.nupkg
